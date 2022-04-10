@@ -1,0 +1,15 @@
+.input {
+  min-height: 62px;
+  line-height: 62px;
+  width: calc(100% - 56px);
+  /* ? How exactly does that work? */
+  border-radius: none;
+  outline: none;
+  /* ! Mentioned that it is usually a bad practice to disable outline */
+  color: #999;
+  margin-right: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+  /* Giving a nice little shadow to the input box */
+  font-size: 24px;
+}

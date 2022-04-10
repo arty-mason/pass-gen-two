@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { Button } from './ui/button'
+import { Checkbox } from './ui/checkbox';
+import { Input } from './ui/input';
+import { Select } from './ui/select';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button type="button">
+        <span>Button</span>
+      </Button>
+      <Checkbox></Checkbox>
+      <Input></Input>
+      <Select></Select>
     </div>
   );
 }

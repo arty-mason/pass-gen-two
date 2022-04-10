@@ -1,0 +1,16 @@
+/* The reason why we use .module extension is to make the styles local, i.e. for the styles to apply to a specific local component inside the directory and to overlap with other styles from other directories*/
+
+.button {
+  min-height: 42px;
+  line-height: 42px;
+  padding: 0 20px;
+  background-color: #333;
+  cursor: pointer;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
