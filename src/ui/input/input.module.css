@@ -1,9 +1,8 @@
 .input {
   min-height: 62px;
   line-height: 62px;
-  width: calc(100% - 56px);
+  width: calc(100% - 80px);
   /* ? How exactly does that work? */
-  border-radius: none;
   outline: none;
   /* ! Mentioned that it is usually a bad practice to disable outline */
   color: #999;

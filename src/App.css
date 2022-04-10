@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+/* Applying classes to the whole html page */
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* Aligning the content in the middle of the page*/
