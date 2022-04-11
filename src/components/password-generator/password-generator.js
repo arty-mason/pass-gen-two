@@ -7,7 +7,6 @@ import { Button } from '../../ui/button'
 
 import styles from "./password-generator.module.css";
 function PasswordGenerator() {
-  // ! Doesn't work - doesn't generate the result
   let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   // Creating a variable to store chars
   const symbols = "!@#$%^&()\_+?<>:{}[]";
@@ -75,11 +74,11 @@ function PasswordGenerator() {
       <h1 className={styles['title']}>Password generator</h1>
       <div className={styles['result']}>
         {/* Creating an element to store the result */}
-        <Input type="text" readonly={true} defaultValue={result}></Input>
+        <Input type="text" readOnly={true} defaultValue={result}></Input>
         {/* Setting the input with "type" value & assging 'true' boolean to 'readonly' property*/}
         {/* Attributing the result of handlePasswordGenerator to defaultValue */}
         {/* Why exactly do we need readonly? */}
-        <button className={styles['copy']} onclick={handlePasswordCopy}></button>
+        <button className={styles['copy']} onClick={handlePasswordCopy}></button>
         {/* Creating a button to copy the password into clipboard & assigning the function to it*/}
         {isPasswordCopied && <span className={styles['copied']}>Copied!</span>}
         {/* Creating a notification when the password is copied to clipboard only when its copied*/}
@@ -99,7 +98,7 @@ function PasswordGenerator() {
         {/* Setting the default checked value to 'false' and attributing id */}
         {/* Using onChange to handle the usage of symbols by attributing the function handleSymbolsUsed to it*/}
       </div>
-      <Button type="button" onclick={handlePasswordGenerator}>Generate password</Button>
+      <Button type="button" onClick={handlePasswordGenerator}>Generate password</Button>
       {/* Using onClick even handle to use the handlePasswordGenerator function */}
     </div>
   )
